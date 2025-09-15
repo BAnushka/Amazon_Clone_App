@@ -7,9 +7,9 @@ const HeaderStyles = StyleSheet.create({
         marginRight: 10,
     },
     icon:{
-        width: 30,
-        height: 30,
-        marginLeft: 5,
+        width: 40,
+        height: 40,
+        marginLeft: 10,
         marginRight: 5,
     },
     textinput:{
@@ -24,8 +24,8 @@ const HeaderStyles = StyleSheet.create({
         justifyContent:'flex-start',
         paddingHorizontal: 2,
         height: 40,
-        width: 260,
-        backgroundColor: '#f2f2f2ff',
+        width: 290,
+        backgroundColor: '#f2efefff',
         borderColor: 'gray',
         borderRadius: 15,
         fontSize: 16,
@@ -40,6 +40,7 @@ const HeaderStyles = StyleSheet.create({
         justifyContent: 'flex-start', 
         alignItems: 'center',
         paddingLeft: 10,
+        position: 'absolute',
     },
     headerTitle: {
         color: 'black',

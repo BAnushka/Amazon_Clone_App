@@ -3,15 +3,15 @@ import { View, TextInput, Image } from "react-native";
 import { SafeAreaView} from "react-native-safe-area-context";
 import HeaderStyles from "./Header.style";
 import { Images } from "../../../src/Assets/Images";
+import { useState } from "react";
 
 
 const HeaderTitle = () => {
-    const [number, onChangeNumber] = React.useState('');
+    const [number, onChangeNumber] = useState('');
 
     return (
         <SafeAreaView>
             <View style={HeaderStyles.headerContainer}>
-                <Image source={Images.MenuIcon} style={HeaderStyles.icon}/>
                 <Image source={Images.AmazonLogo} style={HeaderStyles.amazonLogo}/>
 
                 <View style={HeaderStyles.textinputContainer}>

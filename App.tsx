@@ -10,6 +10,8 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 import Header from './src/Components/Header/Header';
+import Footer from './src/Components/Footer/Footer';
+import Location from './src/Components/Location/Location';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -27,6 +29,11 @@ function AppContent() {
   return (
     <View style={styles.container}>
       <Header />
+      <Location />
+      <View style = {{flex: 1}}>
+       {/* Other app content can go here */}
+      </View>
+      <Footer />
     </View>
   );
 }
